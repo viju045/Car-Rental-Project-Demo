@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Car Rental</title>
+<style>
+    html, body, div, span, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    abbr, address, cite, code,
+    del, dfn, em, img, ins, kbd, q, samp,
+    small, strong, sub, sup, var,
+    b, i,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section, summary,
+    time, mark, audio, video {
+        margin:0;
+        padding:0;
+        border:0;
+        outline:0;
+        font-size:100%;
+        vertical-align:baseline;
+        background:transparent;
+    }
+
+    body {
+        line-height:1;
+    }
+	
+	
+    img{
+        max-width: 100%;
+    }
+
+    article,aside,details,figcaption,figure,
+   header,hgroup,menu,nav,section { 
+        display:block;
+    }
+
+    nav ul {
+        list-style:none;
+    }
+
+    blockquote, q {
+        quotes:none;
+    }
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content:'';
+        content:none;
+    }
+
+    a {
+        margin:0;
+        padding:0;
+        font-size:100%;
+        vertical-align:baseline;
+        background:transparent;
+        color: #006600;
+    }
+
+    /* change colours to suit your needs */
+    ins {
+        background-color:#ff9;
+        color:#000;
+        text-decoration:none;
+    }
+
+    /* change colours to suit your needs */
+    mark {
+        background-color:#ff9;
+        color:#000; 
+        font-style:italic;
+        font-weight:bold;
+    }
+
+    del {
+        text-decoration: line-through;
+    }
+
+    abbr[title], dfn[title] {
+        border-bottom:1px dotted;
+        cursor:help;
+    }
+
+    table {
+        border-collapse:collapse;
+        border-spacing:0;
+    }
+
+    /* change border colour to suit your needs */
+    hr {
+        display:block;
+        height:1px;
+        border:0;   
+        border-top:1px solid #cccccc;
+        margin:1em 0;
+        padding:0;
+    }
+
+    input, select {
+        vertical-align:middle;
+    }
+</style>
+	<meta charset="utf-8">
+	<meta name="author" content="pixelhint.com">
+	<meta name="description" content="La casa free real state fully responsive html5/css3 home page website template"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	
+	
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+
+	<section class="">
+		<?php
+			include 'header.html';
+		?>
+
+			<section class="caption">
+				<h2 class="caption" style="text-align: center">Find The Right Car For You</h2>
+				<h3 class="properties" style="text-align: center">Branded Cars Are Here</h3>
+			</section>
+	</section><!--  end hero section  -->
+
+	<section class="listings">
+		<div class="wrapper">
+			<ul class="properties_list">
+			
+				<li>
+					<a href="book_car.html?id=<?php echo $rws['car_id'] ?>">
+						<img class="thumb" src="C:\xampp\htdocs\Car Rental Project Demo\cars\car_755x430.png" width="300" height="200">
+					</a>
+					<span class="price"><?php echo 'Rs.'.$rws['hire_cost'];?></span>
+					<div class="property_details">
+						<h1>
+							<a href="book_car.html?id=<?php echo $rws['car_id'] ?>"></a>
+						</h1>
+						<h2>Car Name/Model: <span class="property_size"><?php echo $rws['car_name'];?></span></h2>
+					</div>
+				</li>
+			<?php
+				}
+			?>
+			</ul>
+		</div>
+	</section>	<!--  end listing section  -->
+<?php echo $rws['image'];?>
+	

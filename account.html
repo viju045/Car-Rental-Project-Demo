@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Car Rental</title>
+	<style>
+		input[type="submit"]{
+	                       
+              padding: 6px;
+              margin: 2px;
+			  
+              border-bottom-left-radius: 4px;
+  			  border-bottom-right-radius: 5px;
+			  cursor: pointer;
+			  
+			}
+		.lo{
+		
+			  padding:25px ;
+			  border:2px solid black;
+			  width:350px;
+			  height:220px;
+			  box-shadow:5px 10px 8px black;
+			  border-radius:5px ;
+			  margin:25px auto auto	 
+			}	
+		input[type="email"], input[type="password"]{
+	
+	        width: 100%;
+			height: 26px;
+			padding-left: 10px;
+		}
+		
+	</style>
+	<meta charset="utf-8">
+	<meta name="author" content="pixelhint.com">
+	<meta name="description" content="La casa free real state fully responsive html5/css3 home page website template"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<section class="">
+		<?php
+			include 'header.php';
+		?>
+	</section><!--  end hero section  -->
+
+
+
+	<section class="search">
+		<div class="wrapper">
+		<div id="fom">
+		<div class="lo">
+			<form method="post">
+			<h3 style="text-align:right; color: #000099; font-weight:bold; text-decoration:none">Client Login</h3>
+				<table height="200" align="center">
+					<tr>
+						<td>Email Address:</td>
+						<td><input type="email" name="email" placeholder="Enter Email Address" required></td>
+					</tr>
+					<tr>
+							<td>Password:</td>
+						<td><input type="password" name="pass" placeholder="Enter password" required></td>
+					</tr>
+					<tr>
+						<td><input type="submit" name="log" value="Login Here"></td>
+						<td style="text-align:right;"><a href="signup.html">Sigup Here</a></td>
+					</tr>
+				</table>
+			</form>
+			</div>
+			
+			</div>
+		</div>
+
+	</section><!--  end search section  -->
+
+	
